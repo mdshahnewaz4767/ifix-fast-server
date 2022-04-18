@@ -59,7 +59,7 @@ client.connect(err => {
     })
 
     //read review data
-    app.get('/reviews', (req, res) => {
+    app.get('/allReview', (req, res) => {
         reviewsCollection.find({})
         .toArray( (err, documents) => {
         res.send(documents);
